@@ -1,0 +1,116 @@
+/* Global Stylies */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 4.6rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+button {
+  padding: 1.5rem 3.5rem;
+  font-size: 2.4rem;
+  background: #48c9b0;
+  border: none;
+  border-radius: 0.5rem;
+  color: #212f3d;
+  font-weight: 600;
+}
+
+/* Nav And Landing Page */
+
+.header {
+  background: #212f3d;
+}
+
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  color: white;
+  min-height: 10vh;
+  padding: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav h1 {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 500;
+}
+
+nav ul {
+  display: flex;
+  text-decoration: none;
+  font-size: 2.4rem;
+  list-style: none;
+  justify-content: space-around;
+  flex: 1 1 40rem;
+  font-family: monospace;
+}
+
+.landing-page {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+    url("/icon and image/landing-page.jpg");
+  min-height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #f7f9f9;
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  font-family: sans-serif;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 500;
+  flex-wrap: wrap ;
+}
+
+.landing-page h3 {
+  margin: 3.8rem;
+  font-weight: 500;
+}
+
+@media screen and  (max-width:932px){
+
+    nav{
+        text-align: center;
+    }
+
+    nav h1{
+        padding: 1.5rem;
+    }
+}
+
+@media screen and  (max-width:671px){
+
+    html{
+        font-size: 45%;
+    }
+
+    nav{
+        text-align: center;
+    }
+
+    nav h1{
+        padding: 1.5rem;
+    }
+}
