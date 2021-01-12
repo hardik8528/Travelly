@@ -30,6 +30,14 @@ button {
   border-radius: 0.5rem;
   color: #212f3d;
   font-weight: 600;
+  transition: all 0.5s ease-in-out;
+  /* animation: buttonAnimation 2s infinite alternate; */
+  cursor: pointer;
+}
+
+button:hover {
+  background: #212f3d;
+  color: #48c9b0;
 }
 
 /* Nav And Landing Page */
@@ -99,6 +107,7 @@ nav ul {
   align-items: center;
   font-family: sans-serif;
   position: relative;
+  overflow: hidden;
 }
 
 .location-head {
@@ -124,16 +133,33 @@ nav ul {
   position: absolute;
   top: 0%;
   right: 0%;
-  width: 50%;
+  /* width: 50%; */
+  pointer-events: none;
 }
 
 .moving-cloud-1 {
+  animation: cloudAnimation 3s infinite alternate;
 }
 
-.moving-cloud-2 {
-  top: 20%;
-  z-index: -1;
-  opacity: 0.5;
+
+@keyframes buttonAnimation {
+  0% {
+    background: #48c9b0;
+  }
+
+  100% {
+    background: #212f3d;
+    color: #48c9b0;
+  }
+}
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%,0%);
+  }
 }
 
 @media screen and (max-width: 932px) {
@@ -144,6 +170,14 @@ nav ul {
   nav h1 {
     padding: 1.5rem;
     font-size: 5rem;
+  }
+  .cloud{
+    height: 60rem;
+    z-index: -1;
+  }
+  .location-head h3{
+    background: rgba(38, 48, 59, 0.5);
+    -webkit-text-fill-color: rgb(255, 255, 255);
   }
 }
 
