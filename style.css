@@ -142,7 +142,7 @@ nav ul {
 }
 
 #benifit{
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -173,6 +173,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  min-height: 70vh;
 }
 
 .card{
@@ -181,7 +182,6 @@ nav ul {
   margin: 2rem 3rem;
   border-radius: 1rem;
   flex: 1 1 30rem;
-  height: 45vh;
 }
 
 .card h4{
@@ -207,6 +207,68 @@ nav ul {
   padding: 3rem;
   width: 15rem;
   height: 15rem;
+}
+
+#contact{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),url("/image/contact-mountain.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+#form-wrap{
+  background-color: rgba(19, 28, 39, 0.8);
+  width: 60%;
+  text-align: center;
+  color: white;
+  border-radius: 1.5rem;
+}
+
+#form-head{
+  font-size: 3.9rem;
+  padding: 3rem;
+}
+
+#form-wrap form{
+  font-size: 2rem;
+}
+
+#form-wrap .input-name,.input-email{
+  padding: 3rem;
+}
+
+#form-wrap label{
+  margin: 0rem 4rem;
+}
+
+#form-wrap input{
+  padding: 1rem 2rem;
+}
+
+#form-wrap button{
+  width: 100%;
+  margin-top: 3rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.footer-wrap{
+  height: 10vh;
+  background: #212f3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h5{
+  font-size: 2.2rem;
+  font-family: sans-serif;
+  color: white;
 }
 
 @keyframes buttonAnimation {
